@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Maa Sai Classes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Maa Sai Classes</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container narrow">
+    <h1>Contact Us</h1>
+    <p><strong>Address:</strong><br>Plot No.114, Shivnagar, Behind Harinagar-2, Udhna, Surat</p>
+    <p><strong>Phone / WhatsApp:</strong><br><a href="tel:+919624626862">9624626862</a></p>
+
+    <h2>Send a Message</h2>
+    <form id="contactForm" onsubmit="sendMessage(event)">
+      <label for="name">Your name</label>
+      <input id="name" name="name" required>
+
+      <label for="phone">Phone number</label>
+      <input id="phone" name="phone" required pattern='[0-9]{10}' placeholder='10 digit number'>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Short message or enquiry"></textarea>
+
+      <button class="btn" type="submit">Send on WhatsApp</button>
+    </form>
+
+    <h2>Find Us</h2>
+    <p>Open location on Google Maps:</p>
+    <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Plot+No.+114+Shivnagar+Behind+Harinagar-2+Udhna+Surat" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+  </main>
+
+  <footer class="site-footer minimal">
+    <div class="container">
+      © Maa Sai Classes — GSEB Tuition
+    </div>
+  </footer>
+  
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
